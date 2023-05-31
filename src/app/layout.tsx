@@ -1,7 +1,16 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Cabin, Lato } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const cabin = Cabin({
+  subsets: ['latin'],
+  variable: '--font-cabin'
+})
+
+const lato = Lato({
+  subsets: ['latin'],
+  weight: ['300', '700'],
+  variable: '--font-lato'
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -14,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${cabin.className} ${lato.variable}`}>{children}</body>
     </html>
   )
 }
