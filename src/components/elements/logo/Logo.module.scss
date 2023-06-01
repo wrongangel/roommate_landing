@@ -1,0 +1,13 @@
+.logo {
+  font-family: var(--font-cabin);
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logo__image{
+  width: 2.5rem;
+  height: 2.5rem;
+}
