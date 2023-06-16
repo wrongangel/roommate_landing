@@ -19,3 +19,45 @@
 .hero__header_accent{
   color: var(--accent-color);
 }
+
+@media screen and (max-width: 1200px) {
+  .hero__header {
+    font-size: 5.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .hero__header {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 860px) {
+  .hero__header {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .hero__container{
+    padding-top: 5rem;
+    gap: 2rem;
+  }
+  .hero__header {
+    font-size: 3rem;
+  }
+  .hero__text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero__header {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .hero__container {
+    gap: 1rem;
+  }
+  .hero__header {
+    font-size: 1.75rem;
+  }
+}

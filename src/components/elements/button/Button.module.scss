@@ -16,3 +16,9 @@
 .button:hover, .button:focus {
   scale: 1.05;
 }
+
+@media screen and (max-width: 460px) {
+  .button {
+    padding: .75rem 2rem;
+  }
+}
