@@ -17,7 +17,7 @@ const Place = (props: Props) => {
           <p>Name your budget and location and choose the right offer.</p>
           <p>Get a match with perfect room or join forces with others and rent a whole flat together.</p>
         </div>
-        <Button />
+        <Button href='#prices'>Find a room</Button>
       </div>
     </Container>
   )

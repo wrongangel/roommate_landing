@@ -38,7 +38,7 @@ const Household = (props: Props) => {
             <p className={styles.household__point_text}>Manage other things</p>
           </li>
         </ul>
-        <Button />
+        <Button href='#prices'>Setup household</Button>
       </div>
       <div className={styles.household__interactive}>
         <Image className={styles.household__image} src={householdImage} alt='Appartment image' />

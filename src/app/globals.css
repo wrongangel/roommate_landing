@@ -4,6 +4,7 @@
   --background-color: #FFFBFF;
   --text-color: #0D1B2A;
   --accent-color: #F55D3E;
+  --accent-color-05 : rgba(245, 93, 62, .5);
 }
 
 * {

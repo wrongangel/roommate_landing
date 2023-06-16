@@ -14,7 +14,7 @@ const People = (props: Props) => {
           <p>Find roommates who share your values and lifestyle, unite and conquer: go after desirable listings together or rent a spare room to the right person. </p>
           <p>Smart ‘human-like’ algorithm will quickly match you with roommates who fits your criteria - from age and gender to sleeping habits, smoking and pets.</p>
         </div>
-        <Button />
+        <Button href='#prices'>Get a roommate</Button>
       </div>
       <div className={styles.people__interactive}>
         <Image src={peopleImage} alt='' className={styles.interactive__image} />

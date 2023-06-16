@@ -8,7 +8,7 @@ const Hero = (props: Props) => {
     <Container className={styles.hero__container}>
       <h1 className={styles.hero__header}>Find people with right <span className={styles.hero__header_accent}>vibe & accommodation</span> that suits you</h1>
       <p className={styles.hero__text}>Making your dream-housing possible with fewer compromises.</p>
-      <Button />
+      <Button href='#prices'>Get app</Button>
     </Container>
   )
 }

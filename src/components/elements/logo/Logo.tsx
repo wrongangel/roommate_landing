@@ -1,14 +1,17 @@
 import styles from './Logo.module.scss'
 import logo from '@/assets/svg/logo.svg'
 import Image from 'next/image'
+import Link from 'next/link'
 
-interface Props {}
+interface Props {
+  white?: boolean
+}
 const Logo = (props: Props) => {
   return (
-    <div className={styles.logo}>
+    <Link href='/' className={`${styles.logo} ${props.white && styles.logo__white}`}>
       <Image className={styles.logo__icon} src={logo} alt='Roommate Logo Icon' />
       Roommate.host
-    </div>
+    </Link>
   )
 }
 export default Logo

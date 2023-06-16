@@ -9,7 +9,7 @@ interface Props {
 const Menu = ({className}: Props) => {
   return (
     <nav className={`${styles.menu} ${className}`}>
-      <Link href={`#`}>Pricing</Link>
+      <Link href={`/#prices`}>Pricing</Link>
       <Link href={`#`}>Terms of service</Link>
       <LangSwitch />
     </nav>

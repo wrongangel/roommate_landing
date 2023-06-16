@@ -3,14 +3,16 @@ import styles from './Container.module.scss'
 
 interface Props {
   children: React.ReactNode,
-  className?: HTMLAttributes<HTMLDivElement> | string
+  className?: HTMLAttributes<HTMLDivElement> | string,
+  id?: string
 }
 const Container = ({
   children,
-  className
+  className,
+  id
 }: Props) => {
   return (
-    <div className={`${styles.container} ${className}`}>{children}</div>
+    <div id={id} className={`${styles.container} ${className}`}>{children}</div>
   )
 }
 export default Container
