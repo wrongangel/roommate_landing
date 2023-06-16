@@ -32,3 +32,9 @@
   opacity: .5;
   font-size: 0.75rem;
 }
+
+@media screen and (max-width: 1300px) {
+  .footer__content{
+    grid-area: 1/1/1/13;
+  }
+}
