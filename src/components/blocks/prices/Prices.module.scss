@@ -114,3 +114,11 @@
 .filters__more{
   padding-left: 1.5rem;
 }
+
+.prices__button_free {
+  background-color: transparent;
+  outline: .25rem solid var(--accent-color);
+  outline-offset: -.25rem;
+  color: var(--text-color);
+  box-shadow: none;
+}

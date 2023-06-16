@@ -54,7 +54,7 @@ const Prices = (props: Props) => {
       <div className={`${styles.c3} ${styles.r6}`}>Unlimited active dialogues with roommates, other tenants & landlords</div>
 
       <div className={`${styles.c1} ${styles.r7}`}></div>
-      <div  className={`${styles.c2} ${styles.r7}`}><Button>Get app</Button></div>
+      <div  className={`${styles.c2} ${styles.r7}`}><Button className={styles.prices__button_free}>Get app</Button></div>
       <div className={`${styles.c3} ${styles.r7}`}><Button>Get app</Button></div>
     </Container>
   )

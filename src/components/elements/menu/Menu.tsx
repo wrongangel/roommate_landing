@@ -10,7 +10,7 @@ const Menu = ({className}: Props) => {
   return (
     <nav className={`${styles.menu} ${className}`}>
       <Link href={`/#prices`}>Pricing</Link>
-      <Link href={`/tos`}>Terms of service</Link>
+      <Link href={`/tos`}>Privacy policy</Link>
       <LangSwitch />
     </nav>
   )
