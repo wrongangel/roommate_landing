@@ -19,3 +19,9 @@
 .brake__text_accent {
   color: var(--background-color);
 }
+
+@media screen and (max-width: 720px) {
+  .brake__container{
+    padding: 5rem 2rem;
+  }
+}
