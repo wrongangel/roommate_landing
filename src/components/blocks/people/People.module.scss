@@ -39,3 +39,31 @@
   height: auto;
   max-height: 800px;
 }
+
+@media screen and (max-width: 1200px){
+  .people__content {
+    grid-area: 1/1/2/6;
+  }
+  .people__interactive {
+    grid-area: 1/6/2/13;
+  }
+}
+@media screen and (max-width: 1000px){
+  .people__content {
+    grid-area: 1/1/2/7;
+  }
+  .people__interactive {
+    grid-area: 1/7/2/13;
+  }
+}
+@media screen and (max-width: 720px){
+  .people {
+    padding: 5rem 1rem;
+  }
+  .people__content {
+    grid-area: 2/1/3/11;
+  }
+  .people__interactive {
+    grid-area: 1/1/2/13;
+  }
+}

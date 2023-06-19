@@ -38,3 +38,31 @@
   gap: 1rem;
   opacity: .5;
 }
+
+@media screen and (max-width: 1200px){
+  .place__content {
+    grid-area: 1/8/2/13;
+  }
+  .place__interactive {
+    grid-area: 1/1/2/8;
+  }
+}
+@media screen and (max-width: 1000px){
+  .place__content {
+    grid-area: 1/7/2/13;
+  }
+  .place__interactive {
+    grid-area: 1/1/2/7;
+  }
+}
+@media screen and (max-width: 720px){
+  .place__container {
+    padding: 5rem 1rem;
+  }
+  .place__content {
+    grid-area: 2/1/3/11;
+  }
+  .place__interactive {
+    grid-area: 1/1/2/13;
+  }
+}

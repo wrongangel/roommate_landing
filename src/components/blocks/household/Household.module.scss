@@ -41,3 +41,31 @@
   gap: 1rem;
   align-items: center;
 }
+
+@media screen and (max-width: 1200px){
+  .household__content {
+    grid-area: 1/1/2/6;
+  }
+  .household__interactive {
+    grid-area: 1/6/2/13;
+  }
+}
+@media screen and (max-width: 1000px){
+  .household__content {
+    grid-area: 1/1/2/7;
+  }
+  .household__interactive {
+    grid-area: 1/7/2/13;
+  }
+}
+@media screen and (max-width: 720px){
+  .household__container {
+    padding: 5rem 1rem;
+  }
+  .household__content {
+    grid-area: 2/1/3/11;
+  }
+  .household__interactive {
+    grid-area: 1/1/2/13;
+  }
+}
