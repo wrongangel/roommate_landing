@@ -10,7 +10,7 @@ const Footer = (props: Props) => {
       <Container className={styles.footer__container}>
         <div className={styles.footer__content}>
           <Logo white />
-          <Menu className={styles.footer__menu} />
+          <Menu className={styles.footer__menu} bottom />
           <p className={styles.footer__copyright}>© roommate.host 2023</p>
         </div>
       </Container>

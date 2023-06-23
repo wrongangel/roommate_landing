@@ -7,7 +7,9 @@ import { usePathname } from 'next-intl/client'
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 
-interface Props { }
+interface Props {
+  bottom?: boolean
+ }
 const LangSwitch = (props: Props) => {
   const [open, setOpen] = useState(false)
   const t = useTranslations()
@@ -17,7 +19,7 @@ const LangSwitch = (props: Props) => {
       <button onClick={() => setOpen(!open)} className={styles.langSwitch}>
         <Image src={language} alt='language icon' /> {t('Lang')}
       </button>
-      <div className={`${styles.langMenu} ${open && styles.langMenu__show}`}>
+      <div className={`${styles.langMenu} ${open ? props.bottom ? styles.langMenu__showBottom : styles.langMenu__show : ''}`}>
         <Link href={`${pathname}`} locale='en'>English</Link>
         <Link href={`${pathname}`} locale='iw'>Hebrew</Link>
       </div>
