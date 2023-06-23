@@ -39,6 +39,22 @@
   justify-content: center;
   color: var(--background-color);
   background-color: var(--text-color);
+  &:lang(iw){
+    grid-area: 1/6/1/11;
+  }
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  grid-area: 1/5/1/8;
+  background-color: var(--background-color);
+  padding-block: 2rem;
+  &:lang(iw) {
+    text-align: right;
+    grid-area: 1/2/1/6;
+  }
 }
 
 .modal__logo_text {
@@ -51,19 +67,14 @@
   height: 4rem;
 }
 
-.modal__content {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  grid-area: 1/5/1/8;
-  background-color: var(--background-color);
-  padding-block: 2rem;
-}
 
 .modal__content_block {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  &:lang(iw) {
+    align-items: flex-end;
+  }
 }
 
 .modal__header {
@@ -167,6 +178,11 @@
     flex-direction: row;
     justify-content: flex-start;
     padding-left: 1rem;
+    padding-right: 1rem;
+    &:lang(iw){
+      flex-direction: row-reverse;
+      align-items: flex-end;
+    }
   }
   .modal__logo_image {
     width: 2rem;

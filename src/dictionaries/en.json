@@ -1,0 +1,94 @@
+{
+  "Lang": "En",
+  "Hero": {
+    "Header_start": "Find people with right",
+    "Header_accent": "vibe & accommodation",
+    "Header_end": "that suits you",
+    "Text": "Making your dream-housing possible with fewer compromises",
+    "Button": "Get app"
+  },
+  "People_block": {
+    "Header_start": "Find your",
+    "Header_accent": "people",
+    "Header_end": "",
+    "Text1": "Find roommates who share your values and lifestyle, unite and conquer: go after desirable listings together or rent a spare room to the right person",
+    "Text2": "Smart ‘human-like’ algorithm will quickly match you with roommates who fits your criteria - from age and gender to sleeping habits, smoking and pets",
+    "Button": "Get a roommate"
+  },
+  "Brake1": {
+    "Start": "Be where you",
+    "Accent": "want",
+    "End": "to be"
+  },
+  "Place_block": {
+    "Header_start": "Find your",
+    "Header_accent": "place",
+    "Header_end": "",
+    "Text1": "Name your budget and location and choose the right offer",
+    "Text2": "Get a match with perfect room or join forces with others and rent a whole flat together",
+    "Button": "Find a room"
+  },
+  "Household_block": {
+    "Header_start": "Keep track on your",
+    "Header_accent": "tenants",
+    "Header_end": "in one place",
+    "Text": "Enjoy your roommates and leave unpleasant staff to the App - payment reminders, duty schedule, household planning etc",
+    "Point1": "Control payments",
+    "Point2": "Scedule cleaning",
+    "Point3": "Manage cooking queue",
+    "Point4": "Fixate agreements",
+    "Point5": "Manage other things",
+    "Button": "Setup household"
+  },
+  "Brake2": {
+    "Start": "Co-living made",
+    "Accent": "easy",
+    "End": ""
+  },
+  "Prices": {
+    "Headers": {
+      "Pricing": "Pricing",
+      "Results": "Results",
+      "Filters": "Filters",
+      "Super-like": "Super-like",
+      "Dialogues": "Dialogues"
+    },
+    "Basic": {
+      "Name": "Basic",
+      "Pricing": "Free",
+      "Pricing-comment": "",
+      "Results": "View best matches after 'Quick & easy' plan user",
+      "Filters": ["Gender", "Age", "location"],
+      "Filters-additional": "",
+      "Super-like": "Dialogue only after mutual match",
+      "Dialogues": "Up to 5 active dialogues with roommates, other tenants & landlords",
+      "Button": "Get app"
+    },
+    "Premium": {
+      "Name": "Nice and easy",
+      "Pricing": "55 ₪",
+      "Pricing-comment": "Per week\n then 99 ₪ per month",
+      "Results": "View best matches first on top of the feed",
+      "Filters": ["Gender", "Age", "Location", "Smoking habits", "Pets", "Kids"],
+      "Filters-additional": "and many more",
+      "Super-like": "Don't wait for mutual match - connect right away",
+      "Dialogues": "Unlimited active dialogues with roommates, other tenants & landlords",
+      "Button": "Get app"
+    }
+  },
+  "Modal": {
+    "Header" : "Sign Up for beta",
+    "Text": "Roommate.host is in development right now, you can sign up for invite and we notify you when we start beta test.",
+    "Hint": "Email",
+    "Question": "What functions are you interested in?",
+    "Point1": "I am searching for room",
+    "Point2": "I want to rent my room",
+    "Point3": "I want to find people to rent together",
+    "Point4": "I want to manage my household",
+    "Button": "Sign up"
+  },
+  "Menu": {
+    "Pricing": "Pricing",
+    "ToS": "Privacy policy"
+  }
+}

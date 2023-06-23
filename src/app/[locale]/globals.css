@@ -23,6 +23,11 @@ body {
   padding: 0 !important;
 }
 
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
 h1, h2, h3 {
   font-family: var(--font-cabin);
 }

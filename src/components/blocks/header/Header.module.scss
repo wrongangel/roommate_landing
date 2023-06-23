@@ -4,20 +4,13 @@
   justify-content: space-between;
   display: flex;
 }
-
 .header__menuButton {
   display: none;
-  position: relative;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 720px) {
   .header__menu{
-    display: none;
+    display: none; 
   }
   .header__menuButton {
     display: block;

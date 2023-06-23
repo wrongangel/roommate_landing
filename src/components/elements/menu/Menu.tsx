@@ -1,3 +1,5 @@
+'use client'
+import { useTranslations } from "next-intl"
 import Link from "next/link"
 import { HTMLAttributes } from "react"
 import LangSwitch from "../langSwitch/LangSwitch"
@@ -7,10 +9,11 @@ interface Props {
   className?: HTMLAttributes<HTMLDivElement> | string
 }
 const Menu = ({className}: Props) => {
+  const t = useTranslations('Menu')
   return (
     <nav className={`${styles.menu} ${className}`}>
-      <Link href={`/#prices`}>Pricing</Link>
-      <Link href={`/tos`}>Privacy policy</Link>
+      <Link href={`/#prices`}>{t('Pricing')}</Link>
+      <Link href={`/tos`}>{t('ToS')}</Link>
       <LangSwitch />
     </nav>
   )

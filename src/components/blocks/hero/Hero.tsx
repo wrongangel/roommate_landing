@@ -1,14 +1,17 @@
+'use client'
 import Button from '@/components/elements/button/Button'
 import Container from '@/components/elements/container/Container'
+import { useTranslations } from 'next-intl'
 import styles from './Hero.module.scss'
 
 interface Props {}
 const Hero = (props: Props) => {
+  const t = useTranslations('Hero')
   return (
     <Container className={styles.hero__container}>
-      <h1 className={styles.hero__header}>Find people with right<br /> <span className={styles.hero__header_accent}>vibe & accommodation</span><br/> that suits you</h1>
-      <p className={styles.hero__text}>Making your dream-housing possible with fewer compromises.</p>
-      <Button href='#prices'>Get app</Button>
+      <h1 className={styles.hero__header}>{t('Header_start')}<br /> <span className={styles.hero__header_accent}>{t('Header_accent')}</span><br/>{t('Header_end')}</h1>
+      <p className={styles.hero__text}>{t('Text')}</p>
+      <Button href='#prices'>{t('Button')}</Button>
     </Container>
   )
 }

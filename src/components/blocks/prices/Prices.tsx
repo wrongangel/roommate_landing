@@ -5,10 +5,12 @@ import Container from '@/components/elements/container/Container'
 import { useState } from 'react'
 import SubscribeModal from '@/components/blocks/subscribeModal/SubscribeModal'
 import styles from './Prices.module.scss'
+import { useTranslations } from 'next-intl'
 
 interface Props {
 }
 const Prices = (props: Props) => {
+  const t = useTranslations('Prices')
   const [open, setOpen] = useState(false)
 
   const handleOpen = () => {
@@ -26,51 +28,51 @@ const Prices = (props: Props) => {
         <div className={styles.prices__premium}></div>
 
         <div className={`${styles.c1} ${styles.r1}`}></div>
-        <h3 className={`${styles.c2} ${styles.r1} ${styles.prices__tarif}`}>Basic</h3>
-        <h3 className={`${styles.c3} ${styles.r1} ${styles.prices__tarif}`}>Nice and easy</h3>
+        <h3 className={`${styles.c2} ${styles.r1} ${styles.prices__tarif}`}>{t('Basic.Name')}</h3>
+        <h3 className={`${styles.c3} ${styles.r1} ${styles.prices__tarif}`}>{t('Premium.Name')}</h3>
 
-        <h2 className={`${styles.c1} ${styles.r2} ${styles.prices__header}`}>Pricing</h2>
-        <h2 className={`${styles.c2} ${styles.r2} ${styles.prices__price}`}>Free</h2>
+        <h2 className={`${styles.c1} ${styles.r2} ${styles.prices__header}`}>{t('Headers.Pricing')}</h2>
+        <h2 className={`${styles.c2} ${styles.r2} ${styles.prices__price}`}>{t('Basic.Pricing')}</h2>
         <h2 className={`${styles.c3} ${styles.r2} ${styles.prices__price}`}>
-          55 ₪
-          <p className={styles.prices__price_comment}>Per week <br />then 99 ₪  per month</p>
+          {t('Premium.Pricing')}
+          <p className={styles.prices__price_comment}>{t('Premium.Pricing-comment')}</p>
         </h2>
 
-        <h3 className={`${styles.c1} ${styles.r3} ${styles.prices__subHeader}`}>Results</h3>
-        <div className={`${styles.c2} ${styles.r3}`}>View best matches after "Quick & easy" plan user</div>
-        <div className={`${styles.c3} ${styles.r3}`}>View best matches first on top of the feed</div>
+        <h3 className={`${styles.c1} ${styles.r3} ${styles.prices__subHeader}`}>{t('Headers.Results')}</h3>
+        <div className={`${styles.c2} ${styles.r3}`}>{t('Basic.Results')}</div>
+        <div className={`${styles.c3} ${styles.r3}`}>{t('Premium.Results')}</div>
 
-        <h3 className={`${styles.c1} ${styles.r4} ${styles.prices__subHeader}`}>Filters</h3>
+        <h3 className={`${styles.c1} ${styles.r4} ${styles.prices__subHeader}`}>{t('Headers.Filters')}</h3>
         <div className={`${styles.c2} ${styles.r4}`}>
           <ul className={styles.filters__list}>
-            <li>Gender</li>
-            <li>Age</li>
-            <li>Location</li>
+            <li>{t('Basic.Filters.0')}</li>
+            <li>{t('Basic.Filters.1')}</li>
+            <li>{t('Basic.Filters.2')}</li>
           </ul>
         </div>
         <div className={`${styles.c3} ${styles.r4}`}>
           <ul className={styles.filters__list}>
-            <li>Gender</li>
-            <li>Age</li>
-            <li>Location</li>
-            <li>Smoking habits</li>
-            <li>Pets</li>
-            <li>Kids</li>
+            <li>{t('Premium.Filters.0')}</li>
+            <li>{t('Premium.Filters.1')}</li>
+            <li>{t('Premium.Filters.2')}</li>
+            <li>{t('Premium.Filters.3')}</li>
+            <li>{t('Premium.Filters.4')}</li>
+            <li>{t('Premium.Filters.5')}</li>
           </ul>
-          <p className={styles.filters__more}>and many more</p>
+          <p className={styles.filters__more}>{t('Premium.Filters-additional')}</p>
         </div>
 
-        <h3 className={`${styles.c1} ${styles.r5} ${styles.prices__subHeader}`}>Super-like</h3>
-        <div className={`${styles.c2} ${styles.r5}`}>Dialogue only after mutual match</div>
-        <div className={`${styles.c3} ${styles.r5}`}>Don't wait for mutual match - connect right away</div>
+        <h3 className={`${styles.c1} ${styles.r5} ${styles.prices__subHeader}`}>{t('Headers.Super-like')}</h3>
+        <div className={`${styles.c2} ${styles.r5}`}>{t('Basic.Super-like')}</div>
+        <div className={`${styles.c3} ${styles.r5}`}>{t('Premium.Super-like')}</div>
 
-        <h3 className={`${styles.c1} ${styles.r6} ${styles.prices__subHeader}`}>Dialogues</h3>
-        <div className={`${styles.c2} ${styles.r6}`}>Up to 5 active dialogues with roommates, other tenants & landlords</div>
-        <div className={`${styles.c3} ${styles.r6}`}>Unlimited active dialogues with roommates, other tenants & landlords</div>
+        <h3 className={`${styles.c1} ${styles.r6} ${styles.prices__subHeader}`}>{t('Headers.Dialogues')}</h3>
+        <div className={`${styles.c2} ${styles.r6}`}>{t('Basic.Dialogues')}</div>
+        <div className={`${styles.c3} ${styles.r6}`}>{t('Premium.Dialogues')}</div>
 
         <div className={`${styles.c1} ${styles.r7}`}></div>
-        <div className={`${styles.c2} ${styles.r7}`}><Button className={styles.prices__button_free} onClick={handleOpen}>Get app</Button></div>
-        <div className={`${styles.c3} ${styles.r7}`}><Button onClick={handleOpen}>Get app</Button></div>
+        <div className={`${styles.c2} ${styles.r7}`}><Button className={styles.prices__button_free} onClick={handleOpen}>{t('Basic.Button')}</Button></div>
+        <div className={`${styles.c3} ${styles.r7}`}><Button onClick={handleOpen}>{t('Premium.Button')}</Button></div>
 
       </Container>
       <SubscribeModal open={open} handleClose={handleClose} />

@@ -48,11 +48,18 @@
   flex-direction: column;
   gap: 1rem;
   padding-left: 1rem;
+  padding-right: 1rem;
+  &:lang(iw) {
+    align-items: flex-end;
+  }
 
   & label {
     display: flex;
     gap: .5rem;
     align-items: center;
+    &:lang(iw) {
+      flex-direction: row-reverse;
+    }
 
     & span {
       opacity: .5;

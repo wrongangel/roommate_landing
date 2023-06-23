@@ -4,6 +4,9 @@
   gap: 2rem;
   padding-top: 10rem;
   padding-bottom: 10rem;
+  &:lang(iw) {
+    text-align: right;
+  }
 }
 
 .place__interactive {
@@ -22,6 +25,9 @@
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+  &:lang(iw) {
+    align-items: flex-end;
+  }
 }
 
 .place__content_header {
@@ -57,10 +63,16 @@
 }
 @media screen and (max-width: 720px){
   .place__container {
-    padding: 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   .place__content {
     grid-area: 2/1/3/11;
+    &:lang(iw) {
+      grid-area: 2/1/3/13;
+    }
   }
   .place__interactive {
     grid-area: 1/1/2/13;
