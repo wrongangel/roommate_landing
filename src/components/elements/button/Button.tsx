@@ -8,13 +8,14 @@ interface Props {
   children?: React.ReactElement | string
   href?: Url
   onClick? : () => void
+  disabled?: boolean
 }
 const Button = (props: Props) => {
   return (<>
     {props.href ?
       <Link href={props.href} className={`${styles.button} ${props.className}`}>{props.children}</Link>
       :
-      <button onClick={props.onClick} className={`${styles.button} ${props.className}`}>{props.children}</button>
+      <button onClick={props.onClick} disabled={props.disabled} className={`${styles.button} ${props.className}`}>{props.children}</button>
     }
   </>
   )
