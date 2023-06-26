@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from 'next-intl'
 
 const cabin = Cabin({
   subsets: ['latin'],
+  weight: ['400', '600', '700'],
   variable: '--font-cabin'
 })
 
