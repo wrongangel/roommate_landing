@@ -1,4 +1,7 @@
 .menu {
   gap: 1.5rem;
-  align-items: center;
+ text-align: left;
+ &:lang(iw) {
+  text-align: right;
+ }
 }
