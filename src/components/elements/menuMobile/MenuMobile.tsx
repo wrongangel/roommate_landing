@@ -32,11 +32,11 @@ const MenuMobile = (props: Props) => {
       <div className={`${styles.menu__content} ${open && styles.menu__content_open}`}>
         <div className={styles.menu__button_close}><button onClick={handleClose} className={styles.menu__button}><Image src={closeIcon} alt='menu' /></button></div>
         <nav className={`${styles.menu__links}`}>
-          <Link href={`/#prices`}>{t('Pricing')}</Link>
-          <Link href={`/tos`}>{t('ToS')}</Link>
+          <Link href={`/#prices`} onClick={handleClose}>{t('Pricing')}</Link>
+          <Link href={`/tos`} onClick={handleClose}>{t('ToS')}</Link>
           <Image src={language} alt='language icon' />
-          <Link href={`${pathname}`} locale='en'>English</Link>
-          <Link href={`${pathname}`} locale='iw'>Hebrew</Link>
+          <Link href={`${pathname}`} locale='en' onClick={handleClose}>English</Link>
+          <Link href={`${pathname}`} locale='iw' onClick={handleClose}>Hebrew</Link>
         </nav>
       </div>
     </div>
