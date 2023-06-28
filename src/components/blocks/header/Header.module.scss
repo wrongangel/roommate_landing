@@ -8,6 +8,10 @@
   display: none;
 }
 
+.header__menu {
+  display: flex;
+}
+
 @media screen and (max-width: 720px) {
   .header__menu{
     display: none; 

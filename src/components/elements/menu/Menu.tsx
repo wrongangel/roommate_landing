@@ -12,7 +12,7 @@ interface Props {
 const Menu = ({className, bottom}: Props) => {
   const t = useTranslations('Menu')
   return (
-    <nav className={`${styles.menu} ${className}`}>
+    <nav className={`${className} ${styles.menu}`}>
       <Link href={`/#prices`}>{t('Pricing')}</Link>
       <Link href={`/tos`}>{t('ToS')}</Link>
       <LangSwitch bottom={bottom} />

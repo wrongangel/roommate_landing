@@ -22,6 +22,7 @@
 
 .footer__menu {
   color: var(--background-color);
+  display: flex;
   flex-grow: 1;
   justify-content: center;
 }
