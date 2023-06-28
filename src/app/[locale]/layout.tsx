@@ -1,6 +1,7 @@
 import './globals.css'
 import { Cabin, Lato } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
+import Script from 'next/script'
 
 const cabin = Cabin({
   subsets: ['latin'],
@@ -43,6 +44,21 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={locale} messages={messages} >
           {children}
         </NextIntlClientProvider>
+        <Script strategy='afterInteractive' src='https://www.googletagmanager.com/gtag/js?id=G-N2Q2T1CRB0'></Script>
+        <Script
+          id='google-analytics'
+          strategy='afterInteractive'
+          >
+            {
+              `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            
+              gtag('config', 'G-N2Q2T1CRB0');
+              `
+            }
+          </Script>
       </body>
     </html>
   )
