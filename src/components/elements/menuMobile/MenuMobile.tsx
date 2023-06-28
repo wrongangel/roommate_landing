@@ -19,12 +19,15 @@ const MenuMobile = (props: Props) => {
   const [open, setOpen] = useState(false)
   const handleOpen = () => {
     setOpen(true)
+    document.body.style.overflow = 'hidden'
   }
   const handleClose = () => {
     setOpen(false)
+    document.body.style.overflow = 'unset'
   }
   return (
     <div className={`${styles.menu} ${props.className}`}>
+      <div onClick={() => setOpen(!open)} className={`${styles.backdrop} ${open && styles.backdrop__show}`}></div>
       <button onClick={handleOpen} className={styles.menu__button}><Image src={menuIcon} alt='menu' /></button>
       <div className={`${styles.menu__content} ${open && styles.menu__content_open}`}>
         <div className={styles.menu__button_close}><button onClick={handleClose} className={styles.menu__button}><Image src={closeIcon} alt='menu' /></button></div>
