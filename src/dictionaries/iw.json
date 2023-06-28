@@ -1,5 +1,5 @@
 {
-  "Lang": "Iw",
+  "Lang": "He",
   "Hero": {
     "Header_start": "מצא אנשים עם",
     "Header_accent": "אווירה ומקומות",
@@ -65,7 +65,7 @@
       "Button": "קבל אפליקציה"
     },
     "Premium": {
-      "Name": "Nice and easy",
+      "Name": "נחמד וקל",
       "Pricing": "₪ 55",
       "Pricing-comment": "לשבוע ואז\n ₪ 99 לחודש",
       "Results": "הצג את ההתאמות הטובות ביותר בראש העדכון",
