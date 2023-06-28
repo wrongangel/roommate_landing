@@ -16,10 +16,11 @@ const LangSwitch = (props: Props) => {
   const pathname = usePathname()
   return (
     <div className={styles.lang__container}>
+      <div onClick={() => setOpen(!open)} className={`${styles.backdrop} ${open && styles.backdrop__show}`}></div>
       <button onClick={() => setOpen(!open)} className={styles.langSwitch}>
         <Image src={language} alt='language icon' /> {t('Lang')}
       </button>
-      <div className={`${styles.langMenu} ${open ? props.bottom ? styles.langMenu__showBottom : styles.langMenu__show : ''}`}>
+      <div className={`${styles.langMenu} ${open ? props.bottom ? styles.langMenu__showBottom : styles.langMenu__show : ''}`} onClick={e => e.stopPropagation()}>
         <Link href={`${pathname}`} locale='en'>English</Link>
         <Link href={`${pathname}`} locale='iw'>Hebrew</Link>
       </div>
