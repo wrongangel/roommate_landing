@@ -5,7 +5,7 @@
     "Header_accent": "vibe & accommodation",
     "Header_end": "that suits you",
     "Text": "Making your dream-housing possible with fewer compromises",
-    "Button": "Get app"
+    "Button": "Choose a plan"
   },
   "People_block": {
     "Header_start": "Find your",
@@ -47,7 +47,7 @@
   },
   "Prices": {
     "Headers": {
-      "Pricing": "Pricing",
+      "Pricing": "Prices",
       "Results": "Results",
       "Filters": "Filters",
       "Super-like": "Super-like",
@@ -88,7 +88,7 @@
     "Button": "Sign up"
   },
   "Menu": {
-    "Pricing": "Pricing",
+    "Pricing": "Prices",
     "ToS": "Privacy policy"
   }
 }
