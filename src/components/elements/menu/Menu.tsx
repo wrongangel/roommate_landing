@@ -15,7 +15,7 @@ const Menu = ({className, bottom}: Props) => {
     <nav className={`${className} ${styles.menu}`}>
       <Link href={`/#prices`}>{t('Pricing')}</Link>
       <Link href={`/tos`}>{t('ToS')}</Link>
-      <LangSwitch bottom={bottom} />
+      {/* <LangSwitch bottom={bottom} /> */}
     </nav>
   )
 }

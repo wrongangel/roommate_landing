@@ -34,9 +34,9 @@ const MenuMobile = (props: Props) => {
         <nav className={`${styles.menu__links}`}>
           <Link href={`/#prices`} onClick={handleClose}>{t('Pricing')}</Link>
           <Link href={`/tos`} onClick={handleClose}>{t('ToS')}</Link>
-          <Image src={language} alt='language icon' />
+          {/* <Image src={language} alt='language icon' />
           <Link href={`${pathname}`} locale='en' onClick={handleClose}>English</Link>
-          <Link href={`${pathname}`} locale='iw' onClick={handleClose}>Hebrew</Link>
+          <Link href={`${pathname}`} locale='iw' onClick={handleClose}>Hebrew</Link> */}
         </nav>
       </div>
     </div>
