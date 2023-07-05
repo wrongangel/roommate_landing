@@ -81,10 +81,10 @@
     "Text": "Roommate.host is in development right now, you can sign up for invite and we notify you when we start beta test.",
     "Hint": "Email",
     "Question": "What functions are you interested in?",
-    "Point1": "I am searching for room",
-    "Point2": "I want to rent out my room",
-    "Point3": "I want to find people to rent together",
-    "Point4": "I want to manage my household",
+    "Point1": "Rent a room/apartment",
+    "Point2": "Rent out my room/apartment",
+    "Point3": "Find people to rent together",
+    "Point4": "Manage my household",
     "Button": "Sign up"
   },
   "Menu": {
