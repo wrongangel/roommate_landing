@@ -41,7 +41,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={`${cabin.className} ${lato.variable}`}>
-        <Script id='google-tag' strategy='afterInteractive'>
+        <Script id='google-tag-manager' strategy='afterInteractive'>
           {
             `
                   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
