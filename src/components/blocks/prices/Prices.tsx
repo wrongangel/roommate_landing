@@ -73,8 +73,8 @@ const Prices = (props: Props) => {
         <div className={`${styles.c3} ${styles.r6}`}>{t('Premium.Dialogues')}</div>
 
         <div className={`${styles.c1} ${styles.r7}`}></div>
-        <div className={`${styles.c2} ${styles.r7}`}><Button className={styles.prices__button_free} onClick={handleOpen}>{t('Basic.Button')}</Button></div>
-        <div className={`${styles.c3} ${styles.r7}`}><Button onClick={handleOpen}>{t('Premium.Button')}</Button></div>
+        <div className={`${styles.c2} ${styles.r7}`}><Button id='basic' className={styles.prices__button_free} onClick={handleOpen}>{t('Basic.Button')}</Button></div>
+        <div className={`${styles.c3} ${styles.r7}`}><Button id='premium' onClick={handleOpen}>{t('Premium.Button')}</Button></div>
 
       </Container>
       <SubscribeModal open={open} handleClose={handleClose} />

@@ -11,7 +11,7 @@ const Hero = (props: Props) => {
     <Container className={styles.hero__container}>
       <h1 className={styles.hero__header}>{t('Header_start')}<br /> <span className={styles.hero__header_accent}>{t('Header_accent')}</span><br/>{t('Header_end')}</h1>
       <p className={styles.hero__text}>{t('Text')}</p>
-      <Button href='#prices'>{t('Button')}</Button>
+      <Button id='hero' href='#prices'>{t('Button')}</Button>
     </Container>
   )
 }

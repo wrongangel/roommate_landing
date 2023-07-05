@@ -9,13 +9,14 @@ interface Props {
   href?: Url
   onClick? : () => void
   disabled?: boolean
+  id?: string
 }
 const Button = (props: Props) => {
   return (<>
     {props.href ?
-      <Link href={props.href} className={`${styles.button} ${props.className}`}>{props.children}</Link>
+      <Link id={props.id} href={props.href} className={`${styles.button} ${props.className}`}>{props.children}</Link>
       :
-      <button onClick={props.onClick} disabled={props.disabled} className={`${styles.button} ${props.className}`}>{props.children}</button>
+      <button id={props.id} onClick={props.onClick} disabled={props.disabled} className={`${styles.button} ${props.className}`}>{props.children}</button>
     }
   </>
   )

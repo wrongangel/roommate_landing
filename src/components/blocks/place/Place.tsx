@@ -20,7 +20,7 @@ const Place = (props: Props) => {
           <p>{t('Text1')}</p>
           <p>{t('Text2')}</p>
         </div>
-        <Button href='#prices'>{t('Button')}</Button>
+        <Button id='place' href='#prices'>{t('Button')}</Button>
       </div>
     </Container>
   )

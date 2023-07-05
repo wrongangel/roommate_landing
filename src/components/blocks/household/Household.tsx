@@ -41,7 +41,7 @@ const Household = (props: Props) => {
             <p className={styles.household__point_text}>{t('Point5')}</p>
           </li>
         </ul>
-        <Button href='#prices'>{t('Button')}</Button>
+        <Button id='household' href='#prices'>{t('Button')}</Button>
       </div>
       <div className={styles.household__interactive}>
         <Image className={styles.household__image} src={householdImage} alt='Appartment image' />

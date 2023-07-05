@@ -17,7 +17,7 @@ const People = (props: Props) => {
           <p>{t('Text1')}</p>
           <p>{t('Text2')}</p>
         </div>
-        <Button href='#prices'>{t('Button')}</Button>
+        <Button id='people' href='#prices'>{t('Button')}</Button>
       </div>
       <div className={styles.people__interactive}>
         <Image src={peopleImage} alt='' className={styles.interactive__image} />
