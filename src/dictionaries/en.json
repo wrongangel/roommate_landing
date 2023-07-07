@@ -29,14 +29,14 @@
     "Button": "Find a room"
   },
   "Household_block": {
-    "Header_start": "Keep track on your",
-    "Header_accent": "tenants",
-    "Header_end": "in one place",
-    "Text": "Enjoy your roommates and leave unpleasant staff to the App - payment reminders, duty schedule, household planning etc",
-    "Point1": "Control payments",
-    "Point2": "Scedule cleaning",
-    "Point3": "Manage cooking queue",
-    "Point4": "Fixate agreements",
+    "Header_start": "Leave the\u00a0unpleasant",
+    "Header_accent": "staff",
+    "Header_end": "to\u00a0us",
+    "Text": "Set a joint account with your roommates and get easy and practical tools for stressless and effective co-living",
+    "Point1": "Payment reminders",
+    "Point2": "Tasks and duties schedule (cleaning, groseries etc.)",
+    "Point3": "Shared calendar",
+    "Point4": "Fix, offer and accept agreements",
     "Point5": "Manage other things",
     "Button": "Setup household"
   },

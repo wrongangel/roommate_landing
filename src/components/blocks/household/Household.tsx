@@ -4,7 +4,7 @@ import Container from "@/components/elements/container/Container"
 import styles from './Household.module.scss'
 import shekel from '@/assets/svg/shekel.svg'
 import vacuum_cleaner from '@/assets/svg/vacuum_cleaner.svg'
-import cutlery from '@/assets/svg/cutlery.svg'
+import calendar from '@/assets/svg/calendar.svg'
 import agreement from '@/assets/svg/agreement.svg'
 import other from '@/assets/svg/other.svg'
 import householdImage from '@/assets/images/household.png'
@@ -29,7 +29,7 @@ const Household = (props: Props) => {
             <p className={styles.household__point_text}>{t('Point2')}</p>
           </li>
           <li className={styles.household__point}>
-            <Image className={styles.household__point_icon} src={cutlery} alt='Cooking Icon' />
+            <Image className={styles.household__point_icon} src={calendar} alt='Cooking Icon' />
             <p className={styles.household__point_text}>{t('Point3')}</p>
           </li>
           <li className={styles.household__point}>
