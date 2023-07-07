@@ -17,6 +17,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   max-width: 100vw;
   font-family: var(--font-lato);
   padding: 0 !important;
