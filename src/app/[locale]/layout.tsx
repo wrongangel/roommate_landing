@@ -2,6 +2,7 @@ import './globals.css'
 import { Cabin, Lato } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import Script from 'next/script'
+import ScrollToTop from '@/components/elements/scrollToTop/ScrollToTop'
 
 const cabin = Cabin({
   subsets: ['latin'],
@@ -58,6 +59,7 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={locale} messages={messages} >
           {children}
         </NextIntlClientProvider>
+        <ScrollToTop />
         <Script strategy='afterInteractive' src='https://www.googletagmanager.com/gtag/js?id=G-N2Q2T1CRB0'></Script>
         <Script
           id='google-analytics'

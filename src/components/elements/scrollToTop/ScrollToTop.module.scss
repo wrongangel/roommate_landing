@@ -1,0 +1,36 @@
+.scrollButton {
+  display: flex;
+  opacity: 0;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  transition: 300ms;
+  justify-content: right;
+  visibility: hidden;
+  &__show {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.scrollButton__button{
+  line-height: 0;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 500rem;
+  box-shadow: 0px 24px 48px rgba(40, 6, 40, 0.1), 0px 12.15px 20.925px rgba(40, 6, 40, 0.0675), 0px 4.8px 7.8px rgba(40, 6, 40, 0.05), 0px 1.05px 2.775px rgba(40, 6, 40, 0.0325);
+}
+
+@media screen and (max-width: 1300px) { 
+  .scrollButton {
+    bottom: 5rem;
+  }
+}
+@media screen and (max-width: 800px) { 
+  .scrollButton {
+    bottom: 2rem;
+  }
+}
