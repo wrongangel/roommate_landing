@@ -67,7 +67,18 @@
     "Premium": {
       "Name": "Nice and easy",
       "Pricing": "55 ₪",
-      "Pricing-comment": "Per week\n then 99 ₪ per month",
+      "Pricing-comment": "/week",
+      "Results": "View best matches first on top of the feed",
+      "Filters": ["Gender", "Age", "Location", "Smoking habits", "Pets", "Kids"],
+      "Filters-additional": "and many more",
+      "Super-like": "Don't wait for mutual match - connect right away",
+      "Dialogues": "Unlimited active dialogues with roommates, other tenants & landlords",
+      "Button": "Get app"
+    },
+    "Premium_monthly": {
+      "Name": "Nice and easy",
+      "Pricing": "99 ₪",
+      "Pricing-comment": "/month",
       "Results": "View best matches first on top of the feed",
       "Filters": ["Gender", "Age", "Location", "Smoking habits", "Pets", "Kids"],
       "Filters-additional": "and many more",
