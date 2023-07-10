@@ -96,7 +96,9 @@
     "Point2": "Rent out my room/apartment",
     "Point3": "Find people to rent together",
     "Point4": "Manage my household",
-    "Button": "Sign up"
+    "Button": "Sign up",
+    "Error": "Something went wrong, please try again later",
+    "Ok": "Thakyou for subscribing, we will send you a later when we start beta test"
   },
   "Menu": {
     "Pricing": "Prices",

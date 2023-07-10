@@ -99,6 +99,12 @@
   padding: 0;
 }
 
+.modal__ok {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 @media screen and (max-width: 1300px) {
   .modal__window {
     grid-area: 1/2/1/12;
