@@ -81,7 +81,7 @@ const SubscribeForm = (props: Props) => {
           <span>{t('Point4')}</span>
         </label>
       </div>
-      <Button onClick={sendData} disabled={!isValid}>{t('Button')}</Button>
+      <Button id='subscribe' onClick={sendData} disabled={!isValid}>{t('Button')}</Button>
     </>
   )
 }
