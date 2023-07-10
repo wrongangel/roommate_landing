@@ -26,13 +26,13 @@ export const metadata: Metadata = {
     description: 'Find a room & a perfect roommate quick and easy',
     images: [
       {
-        url: '/openGraph_cover_800x600.png',
+        url: 'https://roommate.host/openGraph_cover_800x600.png',
         width: 800,
         height: 600,
         alt: 'Roommate.host.logo'
       },
       {
-        url: '/openGraph_cover_900x800.png',
+        url: 'https://roommate.host/openGraph_cover_900x800.png',
         width: 900,
         height: 800,
         alt: 'Roommate.host.logo'
