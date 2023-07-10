@@ -3,6 +3,7 @@ import { Cabin, Lato } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import Script from 'next/script'
 import ScrollToTop from '@/components/elements/scrollToTop/ScrollToTop'
+import { Metadata } from 'next'
 
 const cabin = Cabin({
   subsets: ['latin'],
@@ -16,9 +17,28 @@ const lato = Lato({
   variable: '--font-lato'
 })
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Roommate',
   description: 'An app for finding roommates',
+  openGraph: {
+    url: 'https://roommate.host',
+    title: 'Roommate.host',
+    description: 'Find a room & a perfect roommate quick and easy',
+    images: [
+      {
+        url: '/openGraph_cover_800x600.png',
+        width: 800,
+        height: 600,
+        alt: 'Roommate.host.logo'
+      },
+      {
+        url: '/openGraph_cover_900x800.png',
+        width: 900,
+        height: 800,
+        alt: 'Roommate.host.logo'
+      }
+    ]
+  }
 }
 
 export function generateStaticParams() {
