@@ -2,7 +2,7 @@
 import Container from '@/components/elements/container/Container'
 import Image from 'next/image'
 import styles from './Place.module.scss'
-import placeImage from '@/assets/images/place.png'
+import placeImage from '@/assets/images/place_o.png'
 import Button from '@/components/elements/button/Button'
 import { useTranslations } from 'next-intl'
 

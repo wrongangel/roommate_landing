@@ -3,7 +3,7 @@ import Button from "@/components/elements/button/Button"
 import Container from "@/components/elements/container/Container"
 import Image from "next/image"
 import styles from './People.module.scss'
-import peopleImage from '@/assets/images/people.png'
+import peopleImage from '@/assets/images/people_o.png'
 import { useTranslations } from "next-intl"
 
 interface Props {}

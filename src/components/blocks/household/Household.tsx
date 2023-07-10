@@ -7,7 +7,7 @@ import vacuum_cleaner from '@/assets/svg/vacuum_cleaner.svg'
 import calendar from '@/assets/svg/calendar.svg'
 import agreement from '@/assets/svg/agreement.svg'
 import other from '@/assets/svg/other.svg'
-import householdImage from '@/assets/images/household.png'
+import householdImage from '@/assets/images/household_o.png'
 import Image from "next/image"
 import { useTranslations } from "next-intl"
 
