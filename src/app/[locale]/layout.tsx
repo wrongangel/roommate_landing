@@ -42,39 +42,48 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={`${cabin.className} ${lato.variable}`}>
-        <Script id='google-tag-manager' strategy='afterInteractive'>
-          {
-            `
+        {process.env.NODE_ENV === "production" &&
+          <>
+            <Script id='google-tag-manager' strategy='afterInteractive'>
+              {
+                `
                   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
                     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                     })(window,document,'script','dataLayer','GTM-NBB8778')
                   `
-          }
-        </Script>
-        <noscript dangerouslySetInnerHTML={{
-          __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBB8778"
-          height="0" width="0" style="display:none;visibility:hidden"></iframe>`}} ></noscript>
+              }
+            </Script>
+            <noscript dangerouslySetInnerHTML={{
+              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBB8778"
+              height="0" width="0" style="display:none;visibility:hidden"></iframe>`}} ></noscript>
+          </>
+        }
         <NextIntlClientProvider locale={locale} messages={messages} >
           {children}
         </NextIntlClientProvider>
+
         <ScrollToTop />
-        <Script strategy='afterInteractive' src='https://www.googletagmanager.com/gtag/js?id=G-N2Q2T1CRB0'></Script>
-        <Script
-          id='google-analytics'
-          strategy='afterInteractive'
-        >
-          {
-            `
+        {process.env.NODE_ENV === "production" &&
+          <>
+            <Script strategy='afterInteractive' src='https://www.googletagmanager.com/gtag/js?id=G-N2Q2T1CRB0'></Script>
+            <Script
+              id='google-analytics'
+              strategy='afterInteractive'
+            >
+              {
+                `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
             
               gtag('config', 'G-N2Q2T1CRB0');
               `
-          }
-        </Script>
+              }
+            </Script>
+          </>
+        }
       </body>
     </html>
   )
