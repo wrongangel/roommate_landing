@@ -40,7 +40,7 @@ const PricesTriple = (props: Props) => {
           <p className={styles.prices__price_comment}>{t('Premium.Pricing-comment')}</p>
         </h2>
         <h2 className={`${styles.c3} ${styles.r2} ${styles.prices__price}`}>
-          {t('Premium_monhtly.Pricing')}
+          {t('Premium_monthly.Pricing')}
           <p className={styles.prices__price_comment}>{t('Premium_monthly.Pricing-comment')}</p>
         </h2>
 

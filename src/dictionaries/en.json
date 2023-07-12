@@ -58,7 +58,7 @@
       "Pricing": "Free",
       "Pricing-comment": "",
       "Results": "View best matches after 'Quick & easy' plan user",
-      "Filters": ["Gender", "Age", "location"],
+      "Filters": ["Gender", "Age", "Location"],
       "Filters-additional": "",
       "Super-like": "Dialogue only after mutual match",
       "Dialogues": "Up to 5 active dialogues with roommates, other tenants & landlords",
