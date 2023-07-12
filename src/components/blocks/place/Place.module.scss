@@ -2,8 +2,6 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 2rem;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
   &:lang(iw) {
     text-align: right;
   }
@@ -65,8 +63,6 @@
   .place__container {
     display: flex;
     flex-direction: column;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
   }
   .place__content {
     grid-area: 2/1/3/11;
@@ -76,5 +72,8 @@
   }
   .place__interactive {
     grid-area: 1/1/2/13;
+  }
+  .place__content_header {
+    font-size: 1.75rem;
   }
 }

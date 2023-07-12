@@ -3,7 +3,6 @@
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: repeat(7, auto);
   gap: 2rem;
-  padding-block: 10rem;
 }
 
 .c1 {
@@ -305,7 +304,6 @@
 @media screen and (max-width: 720px) {
   .prices__container {
     gap: 1rem;
-    padding: 5rem 1rem;
   }
 
   .c2 {

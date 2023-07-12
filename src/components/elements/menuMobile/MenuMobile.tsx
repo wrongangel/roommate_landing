@@ -28,7 +28,7 @@ const MenuMobile = (props: Props) => {
   return (
     <div className={`${styles.menu} ${props.className}`}>
       <div onClick={() => handleClose()} className={`${styles.backdrop} ${open && styles.backdrop__show}`}></div>
-      <button onClick={handleOpen} className={styles.menu__button}><Image src={menuIcon} alt='menu' /></button>
+      <button onClick={handleOpen} className={styles.menu__button}><Image src={menuIcon} alt='menu' width={32} height={32} /></button>
       <div className={`${styles.menu__content} ${open && styles.menu__content_open}`}>
         <div className={styles.menu__button_close}><button onClick={handleClose} className={styles.menu__button}><Image src={closeIcon} alt='menu' /></button></div>
         <nav className={`${styles.menu__links}`}>

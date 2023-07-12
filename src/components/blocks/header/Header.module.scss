@@ -1,11 +1,12 @@
 .header__container {
-  padding: 1rem 2rem;
+  padding: 0rem 2rem;
   align-items: center;
   justify-content: space-between;
   display: flex;
 }
 .header__menuButton {
   display: none;
+  line-height: 0px;
 }
 
 .header__menu {
@@ -20,6 +21,6 @@
     display: block;
   }
   .header__container {
-    padding: 1rem;
+    padding: 0rem 1rem;
   }
 }

@@ -3,7 +3,6 @@
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: repeat(7, auto);
   gap: 2rem;
-  padding-block: 10rem;
 }
 
 .c1 {
@@ -279,12 +278,6 @@
   grid-area: 8/7/15/13;
  }
 
-}
-
-@media screen and (max-width: 720px) {
-  .prices__container {
-    padding-block: 5rem;
-  }
 }
 
 @media screen and (max-width: 600px) {

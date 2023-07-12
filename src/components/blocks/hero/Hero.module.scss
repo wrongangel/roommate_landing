@@ -1,18 +1,17 @@
 .hero__container{
+  width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 10rem;
-  gap: 3rem;
-  &:lang(iw) {
-    text-align: right;
-    align-items: flex-end;
-  }
+  gap: 2rem;
+  text-align: center;
+  align-items: center;
+  max-width: none;
+  padding: 0;
 }
 
 .hero__header{
   font-size: 6rem;
   line-height: 100%;
-  max-width: 62rem;
 }
 
 .hero__text {
@@ -41,7 +40,6 @@
 }
 @media screen and (max-width: 720px) {
   .hero__container{
-    padding: 5rem 1rem;
     gap: 2rem;
   }
   .hero__header {
@@ -58,9 +56,6 @@
   }
 }
 @media screen and (max-width: 460px) {
-  .hero__container {
-    gap: 1rem;
-  }
   .hero__header {
     font-size: 1.75rem;
   }

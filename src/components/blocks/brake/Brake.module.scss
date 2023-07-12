@@ -7,7 +7,7 @@
 
 .brake__container {
   margin: auto;
-  padding: 10rem 2rem;
+  padding: 7rem 2rem;
 }
 
 .brake__text {
@@ -23,5 +23,8 @@
 @media screen and (max-width: 720px) {
   .brake__container{
     padding: 5rem 2rem;
+  }
+  .brake__text{
+    font-size: 1.75rem;
   }
 }
