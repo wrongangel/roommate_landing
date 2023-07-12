@@ -11,6 +11,13 @@
   &__content {
     text-align: left;
     flex-grow: 1;
+    &_head {
+      font-size: 1.25rem;
+    }
+    &_place {
+      font-size: .75rem;
+      opacity: .5;
+    }
   }
 
   &__avatar {
