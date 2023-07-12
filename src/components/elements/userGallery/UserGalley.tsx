@@ -33,7 +33,7 @@ const UserGalley = (props: Props) => {
     
     if (element !== null) { 
       if (window.innerWidth > 720) {
-        element.scrollLeft = (element.scrollWidth -window.innerWidth) / 2
+        element.scrollLeft = ((element.scrollWidth + 16 )-window.innerWidth) / 2
       } else {
         element.scrollLeft = (((element.scrollWidth + 16) / 2) - window.innerWidth) / 2
       }
