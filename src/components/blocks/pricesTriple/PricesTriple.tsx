@@ -36,12 +36,12 @@ const PricesTriple = (props: Props) => {
 
         <h2 className={`${styles.c1} ${styles.r2} ${styles.prices__price}`}>{t('Basic.Pricing')}</h2>
         <h2 className={`${styles.c2} ${styles.r2} ${styles.prices__price}`}>
-          {t('Premium_monthly.Pricing')}
-          <p className={styles.prices__price_comment}>{t('Premium_monthly.Pricing-comment')}</p>
-        </h2>
-        <h2 className={`${styles.c3} ${styles.r2} ${styles.prices__price}`}>
           {t('Premium.Pricing')}
           <p className={styles.prices__price_comment}>{t('Premium.Pricing-comment')}</p>
+        </h2>
+        <h2 className={`${styles.c3} ${styles.r2} ${styles.prices__price}`}>
+          {t('Premium_monhtly.Pricing')}
+          <p className={styles.prices__price_comment}>{t('Premium_monthly.Pricing-comment')}</p>
         </h2>
 
         <div className={`${styles.c1} ${styles.r3}`}>{t('Basic.Results')}</div>
@@ -87,8 +87,8 @@ const PricesTriple = (props: Props) => {
         <div className={`${styles.c3} ${styles.r6}`}>{t('Premium_monthly.Dialogues')}</div>
 
         <div className={`${styles.c1} ${styles.r7}`}><Button id='basic' className={styles.prices__button_free} onClick={handleOpen}>{t('Basic.Button')}</Button></div>
-        <div className={`${styles.c2} ${styles.r7}`}><Button id='premium_monhtly' onClick={handleOpen}>{t('Premium.Button')}</Button></div>
-        <div className={`${styles.c3} ${styles.r7}`}><Button id='premium' onClick={handleOpen}>{t('Premium_monthly.Button')}</Button></div>
+        <div className={`${styles.c2} ${styles.r7}`}><Button id='premium' onClick={handleOpen}>{t('Premium.Button')}</Button></div>
+        <div className={`${styles.c3} ${styles.r7}`}><Button id='premium_monhtly' onClick={handleOpen}>{t('Premium_monthly.Button')}</Button></div>
 
       </Container>
       <SubscribeModal open={open} handleClose={handleClose} />
