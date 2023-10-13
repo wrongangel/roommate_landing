@@ -86,9 +86,9 @@ const PricesTriple = (props: Props) => {
         <div className={`${styles.c2} ${styles.r6}`}>{t('Premium.Dialogues')}</div>
         <div className={`${styles.c3} ${styles.r6}`}>{t('Premium_monthly.Dialogues')}</div>
 
-        <div className={`${styles.c1} ${styles.r7}`}><Button id='basic' className={styles.prices__button_free} onClick={handleOpen}>{t('Basic.Button')}</Button></div>
-        <div className={`${styles.c2} ${styles.r7}`}><Button id='premium' onClick={handleOpen}>{t('Premium.Button')}</Button></div>
-        <div className={`${styles.c3} ${styles.r7}`}><Button id='premium_monhtly' onClick={handleOpen}>{t('Premium_monthly.Button')}</Button></div>
+        <div className={`${styles.c1} ${styles.r7}`}><Button id='basic' target='_blank' className={styles.prices__button_free} href={'https://app.roommate.host/'}>{t('Basic.Button')}</Button></div>
+        <div className={`${styles.c2} ${styles.r7}`}><Button id='premium' target='_blank' onClick={handleOpen} href={'https://app.roommate.host/'}>{t('Premium.Button')}</Button></div>
+        <div className={`${styles.c3} ${styles.r7}`}><Button id='premium_monhtly' target='_blank' onClick={handleOpen} href={'https://app.roommate.host/'}>{t('Premium_monthly.Button')}</Button></div>
 
       </Container>
       <SubscribeModal open={open} handleClose={handleClose} />
